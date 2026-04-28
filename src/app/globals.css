@@ -7,9 +7,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-fira-code);
+  --font-heading: var(--font-space-grotesk);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -48,73 +48,96 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* ── Light mode ── */
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --background: oklch(0.985 0.004 285);
+  --foreground: oklch(0.2 0.02 275);
+  --card: oklch(0.995 0.003 285);
+  --card-foreground: oklch(0.2 0.02 275);
+  --popover: oklch(0.995 0.003 285);
+  --popover-foreground: oklch(0.2 0.02 275);
+  --primary: oklch(0.47 0.23 295);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.46 0.14 205);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.95 0.008 285);
+  --muted-foreground: oklch(0.43 0.025 275);
+  --accent: oklch(0.5 0.21 330);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.55 0.25 27);
+  --border: oklch(0.88 0.01 285);
+  --input: oklch(0.9 0.01 285);
+  --ring: oklch(0.47 0.23 295);
+  --chart-1: oklch(0.47 0.23 295);
+  --chart-2: oklch(0.46 0.14 205);
+  --chart-3: oklch(0.5 0.21 330);
+  --chart-4: oklch(0.6 0.2 145);
+  --chart-5: oklch(0.6 0.22 55);
+  --navbar-bg: oklch(0.985 0.004 285 / 88%);
+  --glass-bg: oklch(1 0 0 / 74%);
+  --glass-border: oklch(0.84 0.012 285 / 92%);
+  --glass-shadow: 0 18px 45px -32px oklch(0.34 0.06 285 / 22%);
+  --border-glow-border: oklch(0.47 0.23 295 / 22%);
+  --border-glow-shadow:
+    inset 0 1px 0 oklch(1 0 0 / 72%),
+    0 14px 35px -32px oklch(0.47 0.23 295 / 26%);
+  --hero-grid-line: oklch(0.46 0.02 285 / 12%);
+  --tech-neutral-icon: oklch(0.24 0.01 275);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.95 0.008 275);
+  --sidebar-foreground: oklch(0.12 0.02 275);
+  --sidebar-primary: oklch(0.55 0.28 295);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.92 0.01 275);
+  --sidebar-accent-foreground: oklch(0.12 0.02 275);
+  --sidebar-border: oklch(0 0 0 / 10%);
+  --sidebar-ring: oklch(0.55 0.28 295);
 }
 
+/* ── Dark gaming theme (always active via .dark on <html>) ── */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: oklch(0.07 0.025 275);
+  --foreground: oklch(0.96 0.005 275);
+  --card: oklch(0.11 0.03 275);
+  --card-foreground: oklch(0.96 0.005 275);
+  --popover: oklch(0.11 0.03 275);
+  --popover-foreground: oklch(0.96 0.005 275);
+  /* Electric violet */
+  --primary: oklch(0.68 0.28 295);
+  --primary-foreground: oklch(0.98 0 0);
+  /* Neon cyan */
+  --secondary: oklch(0.72 0.19 195);
+  --secondary-foreground: oklch(0.07 0.025 275);
+  --muted: oklch(0.16 0.025 275);
+  --muted-foreground: oklch(0.6 0.04 275);
+  /* Hot pink */
+  --accent: oklch(0.68 0.27 330);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.65 0.25 27);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.68 0.28 295);
+  --chart-1: oklch(0.68 0.28 295);
+  --chart-2: oklch(0.72 0.19 195);
+  --chart-3: oklch(0.68 0.27 330);
+  --chart-4: oklch(0.75 0.22 145);
+  --chart-5: oklch(0.7 0.25 55);
+  --navbar-bg: oklch(0.07 0.025 275);
+  --glass-bg: oklch(0.08 0.025 275 / 88%);
+  --glass-border: oklch(1 0 0 / 10%);
+  --glass-shadow: 0 18px 45px -32px oklch(0 0 0 / 65%);
+  --border-glow-border: oklch(0.68 0.28 295 / 40%);
+  --border-glow-shadow: inset 0 0 20px oklch(0.68 0.28 295 / 5%);
+  --hero-grid-line: oklch(1 0 0 / 12%);
+  --tech-neutral-icon: oklch(0.96 0.005 275);
+  --sidebar: oklch(0.1 0.028 275);
+  --sidebar-foreground: oklch(0.96 0.005 275);
+  --sidebar-primary: oklch(0.68 0.28 295);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.16 0.025 275);
+  --sidebar-accent-foreground: oklch(0.96 0.005 275);
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-ring: oklch(0.68 0.28 295);
 }
 
 @layer base {
@@ -123,8 +146,86 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(
+        ellipse 80% 50% at 50% -20%,
+        oklch(0.68 0.28 295 / 12%),
+        transparent
+      ),
+      radial-gradient(
+        ellipse 60% 40% at 80% 110%,
+        oklch(0.72 0.19 195 / 8%),
+        transparent
+      );
   }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-space-grotesk), var(--font-inter), sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* ── Gaming utility classes ── */
+@layer utilities {
+  .glow-primary {
+    box-shadow:
+      0 0 20px oklch(0.68 0.28 295 / 40%),
+      0 0 60px oklch(0.68 0.28 295 / 15%);
+  }
+  .glow-secondary {
+    box-shadow:
+      0 0 20px oklch(0.72 0.19 195 / 40%),
+      0 0 60px oklch(0.72 0.19 195 / 15%);
+  }
+  .glow-accent {
+    box-shadow:
+      0 0 20px oklch(0.68 0.27 330 / 40%),
+      0 0 60px oklch(0.68 0.27 330 / 15%);
+  }
+  .text-gradient-primary {
+    background: linear-gradient(
+      135deg,
+      oklch(0.68 0.28 295),
+      oklch(0.72 0.19 195)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-hot {
+    background: linear-gradient(
+      135deg,
+      oklch(0.68 0.27 330),
+      oklch(0.68 0.28 295)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .border-glow {
+    border: 1px solid var(--border-glow-border);
+    box-shadow: var(--border-glow-shadow);
+  }
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+  }
+  .hero-grid {
+    background-image:
+      linear-gradient(to right, var(--hero-grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--hero-grid-line) 1px, transparent 1px);
+    background-size: 60px 60px;
   }
 }
