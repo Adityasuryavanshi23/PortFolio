@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { profileContact } from "@/data/portfolio/profile-data";
 
@@ -7,7 +7,7 @@ export type ContactSocialCard = {
   label: string;
   handle: string;
   href: string;
-  color: string;
+  color: string ;
 };
 
 export type ContactContent = {
@@ -19,6 +19,7 @@ export type ContactContent = {
   ctaLabel: string;
   ctaHref: string;
 };
+
 
 export const contactContent: ContactContent = {
   eyebrow: "Get In Touch",
@@ -49,6 +50,13 @@ export const contactContent: ContactContent = {
       handle: profileContact.email,
       href: profileContact.emailHref,
       color: "hover:border-accent/50 hover:text-accent",
+    },
+    {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      handle: `+91 ${profileContact.whatsappNumber}`,
+      href: profileContact.whatsappHref,
+      color: "hover:border-emerald-500/50 hover:text-emerald-600 dark:hover:text-emerald-400",
     },
   ],
   ctaLabel: "Say Hello 👋",

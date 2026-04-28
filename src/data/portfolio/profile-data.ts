@@ -28,6 +28,8 @@ export const profileSocialLinks: ProfileSocialLink[] = [
 export const profileContact = {
   email: "adityasuryavanshi239@gmail.com",
   emailHref: "mailto:adityasuryavanshi239@gmail.com",
+  whatsappNumber: "7875415526",
+  whatsappHref: "https://wa.me/917875415526",
   githubHref: "https://github.com/Adityasuryavanshi23",
   linkedinHref: "https://www.linkedin.com/in/aditya-suryavanshi-58b934381/",
 } as const;
