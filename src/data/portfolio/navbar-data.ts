@@ -21,6 +21,6 @@ export const navbarContent: NavbarContent = {
     { label: "Experience", href: "#experience" },
     { label: "Contact", href: "#contact" },
   ],
-  resumeViewUrl: "https://canva.link/lxob6czwpvg1tf2",
-  resumeDownloadUrl: "/Aditya S.Resume Upadated.pdf",
+  resumeViewUrl: "https://canva.link/sps5r0h1actb1z3",
+  resumeDownloadUrl: "/Aditya J Suryavanshi - Resume (UpDated).pdf",
 };
